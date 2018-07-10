@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  title : string;
+  constructor() {
+	this.title = "Hi this is landing component";
+  }
 
   ngOnInit() {
   }

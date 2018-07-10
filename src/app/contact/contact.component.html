@@ -1,0 +1,16 @@
+<table border="1" style ="width:100%;margin-top:25px;">
+<tr>
+ <th>Name</th>
+ <th>Email</th>
+ <th>Message</th>
+</tr><tr [ngStyle]="{height:'22px'}">
+ <td ><input [(ngModel)]="name"></td>
+ <td><input [(ngModel)]="email"></td>
+ <td><input [(ngModel)]="message"> </td>
+</tr>
+<tr [ngStyle]="{height:'22px'}" >
+ <td>{{ name }}</td>
+ <td>{{ email }}</td>
+ <td>{{ message }} </td>
+</tr>
+</table>

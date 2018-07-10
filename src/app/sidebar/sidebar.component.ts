@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+	sidebar : [];
+	constructor() { 
+		this.sidebar = [ { name: 'Home' , path: '/home' } ,
+						{ name: 'Main' , path: '/main' } ,
+						{ name: 'About Us' , path: '/about' },{ name: 'Contact Us' , path: '/contact' } ];
+	}
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
