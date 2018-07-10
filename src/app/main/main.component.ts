@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  title : string;
+  constructor() {
+	this.title = "Hi this main component";
+  }
 
   ngOnInit() {
   }

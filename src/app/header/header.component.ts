@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+	navigation : [];
+	constructor() { 
+		this.navigation = [ { name: 'Home' , path: '/home' } ,
+						{ name: 'Main' , path: '/main' } ,
+						{ name: 'About Us' , path: '/about' },{ name: 'Contact Us' , path: '/contact' } ];
+	}
+	
+	ngOnInit() {
+	  
+	}
 
 }
